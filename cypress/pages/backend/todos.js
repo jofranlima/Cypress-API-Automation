@@ -53,17 +53,8 @@ putToDos(){
 
     }).then(response => {
       expect(response.status).to.eq(405);
-    //   console.log(getAllLocalStorage)
-    //   const invoiceId = response.body.uploadRequestId;
-    //   window.localStorage.setItem('invoiceId', invoiceId);
-    
      })
-  
-    // cy.getAllLocalStorage().then((result) => {
-    //   const local = result;
-    //   console.log(local);
-    // });
-    
+
   }
   
   

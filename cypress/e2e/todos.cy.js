@@ -9,7 +9,11 @@ beforeEach(() => {
   });
  
 
-it.only('Get Todos', () => {
+it('Get Todos', () => {
     toDos.GetToDos();
 });
+it.only('Put Todos', () => {
+  toDos.putToDos();
+});
+
 

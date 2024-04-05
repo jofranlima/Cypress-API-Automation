@@ -23,18 +23,11 @@ GetToDos(){
     }).then(response => {
       expect(response.status).to.eq(200);
       expect(response.body).not.to.be.null;
-
-    //   console.log(getAllLocalStorage)
-    //   const invoiceId = response.body.uploadRequestId;
-    //   window.localStorage.setItem('invoiceId', invoiceId);
-    
+      response.body.todos.forEach(todo => {
+        expect(todo).to.have.property('title').that.is.not.null;
      })
+    })
   
-    // cy.getAllLocalStorage().then((result) => {
-    //   const local = result;
-    //   console.log(local);
-    // });
-    
   }
 
 putToDos(){
